@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Levels Of Education Offered
+    </title>
+
+    <style>
+      .HomePageButton{
+        background-color: #2C2A58;
+        color: #BD9C60;
+        border: none;
+        cursor: pointer;
+        margin-left: 150px;
+        margin-right: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        text-align: center;
+        text-decoration: bold;
+      }
+
+      .HomePageButton:hover{
+        opacity: 0.7;
+      }
+
+      .HomePageButton:active{
+        opacity: 0.5;
+      }
+
+      .HelpPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .HelpPageButton:hover{
+        opacity: 0.7;
+      }
+
+      .HelpPageButton:active{
+        opacity: 0.5;
+      }
+
+      .DepartmentPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .DepartmentPageButton:hover{
+        opacity: 0.7;
+      }
+
+      .DepartmentPageButton:active{
+        opacity: 0.5;
+      }
+
+      .PagePicture1{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0,), rgba(0,0,0,0,)), url(WebsitePictures/interconnected.gif);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .column{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .LevelRow{
+        text-align: center;
+        flex-basis: 31%;
+        background: #35326e;
+        border-radius: 7px;
+        margin-bottom: 5%;
+        padding: 20px 14px;
+        box-sizing: border-box;
+        transition: 0.5s;
+        color:  #BD9C60;
+        cursor: pointer;
+      }
+
+      .LevelRow:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,2);
+      }
+      @media(max-width: 700px){
+        .row{
+          flex-direction: row;
+        }
+      }
+
+      .ImagesRow{
+       flex-basis: 280px;
+       border-radius: 8px;
+       margin: 30px;
+       position: relative;
+       overflow: hidden;
+       height: 100%;
+      }
+
+      .ImagesRow img{
+        width: 100%;
+        border-radius: 8px;
+        height: 100%;
+      }
+
+      .LevelsOfEducation{
+        font-family: 'Segoe UI';
+      }
+
+      .icon{
+        margin-left: 40px;
+        margin-right: 20px;
+        color: #2C2A58
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <div>
+      <img src="WebsitePictures/comScience_logo.png" alt="Department logo" title="" style="width:250px">
+
+      <button class="HomePageButton">
+          HOME
+      </button>
+    
+      <button class="HelpPageButton">
+          HELP
+      </button>
+    
+      <button class="DepartmentPageButton" >
+           ABOUT
+      </button>
+    </div>
+
+    <div>
+      <hr>
+      <img src="WebsitePictures/interconnected.gif" alt="Picture" class="PagePicture1">
+    </div>
+
+    <div>
+      <hr>
+      <div>
+        <h1>
+          Levels Of Education
+        </h1>
+      </div>
+
+      <p>
+        <strong>Undergraduate Program:</strong>
+        Embark on a transformative journey in our undergraduate program, where aspiring minds delve into the intricacies of computer science. Explore core principles, programming languages, and cutting-edge technologies, preparing for a dynamic career in the tech industry.
+        <br>
+        <br>
+
+        <strong>MPhil Program:</strong>
+        Elevate your expertise with our MPhil program, designed for in-depth research and specialization. Engage in advanced coursework, collaborative projects, and contribute to the forefront of computer science knowledge. Shape the future of technology with a mastery that extends beyond the ordinary.
+        <br>
+        <br>
+
+        <strong>Doctorate Program:</strong>
+        Reach the pinnacle of academic achievement in our doctoral program. Undertake groundbreaking research, contribute to global conversations, and become a thought leader in computer science. Join a community of scholars pushing the boundaries of knowledge and innovation. Your journey to redefine what's possible in computer science starts here.
+        <br>
+        <br>
+      </p>
+    </div>
+
+    <div>
+      <section class="LevelsOfEducation">
+        <h2>
+          We Offer
+        </h2>
+        
+        <div class="column">
+          <div class="LevelRow">
+            <h3>
+              Undergraduate
+            </h3>
+            <p>
+              BSc. Computer Science
+              <br>
+              BSc. Computer Science & Statistics
+              <br>
+              BSc. Computer Science & Mathematics
+              <br>
+            </p>
+          </div>
+          <div class="LevelRow">
+            <h3>
+              Mphil
+            </h3>
+            <p>
+              MSc. Computer Science<br>
+              <br>
+              MPhil. Compter Sciecne<br>
+              <br>
+            </p>
+          </div>
+          <div class="LevelRow">
+            <h3>
+              Doctorate
+            </h3>
+            <p>
+              Ph.D Computer Science
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="LevelsOfEducation">
+
+        <div class="column">
+          <div class="ImagesRow">
+            <img src="WebsitePictures/Undergraduate.jpeg">
+          </div>
+          <div class="ImagesRow">
+            <img src="WebsitePictures/masters.jpg">
+          </div>
+          <div class="ImagesRow">
+            <img src="WebsitePictures/Doctorate.jpg">
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  </body>
+
+</html>

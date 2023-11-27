@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Contact and Help Page
+    </title>
+
+    <style>
+      .HomePageButton{
+        background-color: #2C2A58;
+        color: #BD9C60;
+        border: none;
+        cursor: pointer;
+        margin-left: 150px;
+        margin-right: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        text-align: center;
+        text-decoration: bold;
+      }
+
+      .HomePageButton:hover{
+        opacity: 0.7;
+      }
+
+      .HomePageButton:active{
+        opacity: 0.5;
+      }
+
+      .HelpPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .HelpPageButton:hover{
+        opacity: 0.7;
+      }
+
+      .HelpPageButton:active{
+        opacity: 0.5;
+      }
+
+      .DepartmentPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .DepartmentPageButton:hover{
+        opacity: 0.7;
+      }
+
+      .DepartmentPageButton:active{
+        opacity: 0.5;
+      }
+
+      .ContactPane{
+        margin-top: 50px;
+        border-radius: 8px;
+        border-color: #2C2A58;
+        border: 15px;
+        text-align: center;
+        background-color: rgba(246, 203, 146, 0.641);
+      }
+
+      .ContactPane:hover{
+        box-shadow: 10px 10px 10px #2c2a5895;
+      }
+
+      .ContactHeader{
+        text-align: center;
+      }
+
+      .ContactText{
+        font-family: 'Segoe UI';
+        font-size: 17px;
+        color:rgba(0, 0, 0, 0.655);
+      }
+
+      .InquiryPane{
+        margin-top: 50px;
+        border-radius: 8px;
+        border-color: #2C2A58;
+        border: 15px;
+        text-align: center;
+        background-color: rgba(246, 203, 146, 0.641);
+      }
+
+      .InquiryPane:hover{
+        box-shadow: 10px 10px 10px #2c2a5895;
+      }
+
+      .InquiryHeader{
+        text-align: center;
+      }
+
+      .InquiryText{
+        font-family: 'Segoe UI';
+        font-size: 17px;
+        color:rgba(0, 0, 0, 0.655);
+      }
+
+      input{
+        border-color: rgb(126, 126, 126);
+        border-radius: 6px;
+        font-family: 'Segoe UI';
+        margin: 8px 8px 8px 8px;
+        background-color: azure;
+      }
+
+      .ThankYou{
+        font-family: 'Segeo UI';
+        font-size: 14px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="WebsitePictures/comScience_logo.png" alt="Department logo" title="" style="width:250px">
+
+      <button class="HomePageButton">
+          HOME
+      </button>
+    
+      <button class="HelpPageButton">
+          HELP
+      </button>
+    
+      <button class="DepartmentPageButton" >
+           ABOUT
+      </button>
+    </div>
+
+    <div>
+      <hr>
+    </div>
+
+    <div>
+      <h1>CONTACT AND INQUIRIES</h1>
+    </div>
+
+    <div class="ContactPane">
+      <div>
+        <h2 class="ContactHeader">
+          <br>
+          Contact Us
+        </h2>
+      </div>
+
+      <div class="ContactText">
+        <p>
+          We're here to help and answer any questions you might have. We look forward to hearing from you!
+        </p>
+
+        <p>
+          <ion-icon name="location-outline"></ion-icon> University of Ghana, Legon, Computer Science department, Opposite Math Department, Hardware Lab
+        </p>
+        
+        <p>
+          <ion-icon name="call-outline"></ion-icon> +233 558 877 ***
+        </p>
+
+        <p>
+          <ion-icon name="mail-outline"></ion-icon> examplemeail@gmail.com
+        </p>
+        <br>
+      </div>
+    </div>
+
+    <div class="InquiryPane">
+      <div>
+        <br>
+        <h2 class="InquiryHeader">
+          Enter Your Enquiry Details Here
+        </h2>
+      </div>
+
+      <div class="InquiryText">
+        <p>
+          If you have and inquiry you wish to make, please fill in your details below and our team will do their best to answer your inquiry within 48hrs
+        </p>        
+      </div>
+
+      <div class="InquiryInput">
+        <form>
+          <input type="text" placeholder="First Name">
+          <input type="text" placeholder="Last Name">
+          <br>
+          <input type="text" placeholder="Email">
+          <br>
+          <input type="date">
+          <br>
+          <input type="text" placeholder="Inquiry" size=50 height="50">
+          <br>
+          <input type="reset" value="Enter">
+        </form>
+      </div>
+
+
+      <div>
+        <p class="ThankYou">
+          Thank you for your input! <ion-icon name="happy"></ion-icon>
+        </p>
+        <br>
+      </div>
+    </div>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>
