@@ -117,18 +117,15 @@
         user-select: none;
       }
 
-      /* Position the "next button" to the right */
       .next {
         right: 0;
         border-radius: 3px 0 0 3px;
       }
-
-      /* On hover, add a black background color with a little bit see-through */
+      
       .prev:hover, .next:hover {
         background-color: rgba(0,0,0,0.8);
       }
 
-      /* Caption text */
       .text {
         color: black;
         font-size: 22px;
@@ -139,7 +136,6 @@
         text-align: center;
       }
 
-      /* Number text (1/3 etc) */
       .numbertext {
         color: #f2f2f296;
         font-size: 16px;
@@ -148,7 +144,6 @@
         top: 0;
       }
 
-      /* The dots/bullets/indicators */
       .dot {
         cursor: pointer;
         height: 15px;
@@ -163,8 +158,7 @@
       .active, .dot:hover {
         background-color: #717171;
       }
-
-      /* Fading animation */
+      
       .fade {
         animation-name: fade;
         animation-duration: 1.5s;
@@ -174,8 +168,7 @@
         from {opacity: .4} 
         to {opacity: 1}
       }
-
-      /* On smaller screens, decrease text size */
+      
       @media only screen and (max-width: 300px) {
         .prev, .next,.text {font-size: 11px}
       }
@@ -209,6 +202,53 @@
         margin-top: 45vh;
       }
 
+      .PossibleCareersButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .ContactPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .LevelsOfEducationButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .ShortCoursesButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
 
     </style>
   </head>
@@ -217,17 +257,33 @@
     <div>
       <img src="WebsitePictures/comScience_logo.png" alt="Department logo" title="" style="width:250px">
 
-        <button class="HomePageButton">
-            HOME
-        </button>
+      <button class="HomePageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FirstPage.html'">
+        HOME
+      </button>
     
-        <button class="HelpPageButton">
-            HELP
-        </button>
+      <button class="HelpPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FAQPage.html'">
+          HELP
+      </button>
     
-        <button class="DepartmentPageButton" >
-             ABOUT
-        </button>
+      <button class="DepartmentPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\AboutPage.html'">
+          ABOUT
+      </button>
+
+      <button class="ContactPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ContactHelpPage.html'">
+        Contact
+      </button>
+
+      <button class="LevelsOfEducationButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\LevelsOfEducation.html'">
+        Levels
+      </button>
+
+      <button class="ShortCoursesButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ShortCourses.html'">
+        Short Courses
+      </button>
+
+      <button class="PossibleCareersButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\PossibleCarrers.html'">
+        Careers
+      </button>
     </div>
 
     <div>
@@ -353,12 +409,28 @@
     </div>
 
     <div class="NavPane">
-      Help
-      <p>
-        <ul>
-          <li>Things</li>
-        </ul>
-      </p>
+      <div>  
+        Navigate
+        <p> 
+          <ul>
+            <li>Contact Help</li>
+            <li>Level Of Education</li>
+            <li>Possible Careers</li>
+            <li>Short Courses</li>
+          </ul>   
+        </p>
+      </div>
+      
+      <div>
+        Academics
+        <p>
+          <ul>
+            <li>Libraries</li>
+            <li>Academic Calendar</li>
+            <li>Timetable</li>
+          </ul>
+        </p>
+      </div>
     </div>
 
     </body>
