@@ -128,6 +128,61 @@
         margin-right: 20px;
         color: #2C2A58
       }
+      
+      .PossibleCareersButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .ContactPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .LevelsOfEducationButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .ShortCoursesButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .NavPane{
+        font-family: 'Segoe UI';
+        margin-top: 180px;
+        background-color: #2C2A58;
+        color: azure;
+      }
 
     </style>
 
@@ -137,16 +192,32 @@
     <div>
       <img src="WebsitePictures/comScience_logo.png" alt="Department logo" title="" style="width:250px">
 
-      <button class="HomePageButton">
-          HOME
+      <button class="HomePageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FirstPage.html'">
+        HOME
       </button>
     
-      <button class="HelpPageButton">
+      <button class="HelpPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FAQPage.html'">
           HELP
       </button>
     
-      <button class="DepartmentPageButton" >
-           ABOUT
+      <button class="DepartmentPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\AboutPage.html'">
+          ABOUT
+      </button>
+
+      <button class="ContactPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ContactHelpPage.html'">
+        Contact
+      </button>
+
+      <button class="LevelsOfEducationButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\LevelsOfEducation.html'">
+        Levels
+      </button>
+
+      <button class="ShortCoursesButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ShortCourses.html'">
+        Short Courses
+      </button>
+
+      <button class="PossibleCareersButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\PossibleCarrers.html'">
+        Careers
       </button>
     </div>
 
@@ -240,315 +311,32 @@
 
       </section>
 
-      <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Frequently Asked Questions - FAQ
-        </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <style>
-
-          .collapsible {
-            background-color: rgba(27, 68, 190, 0.875);
-            color: white;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-          }
-
-          .active, .collapsible:hover {
-            background-color: #322f6f;
-          }
-
-          .content {
-            padding: 0 18px;
-            display: none;
-            overflow: hidden;
-            background-color: #f1f1f1;
-          }
-
-          .HomePageButton{
-           background-color: #2C2A58;
-           color: #BD9C6C;
-           border: none;
-           cursor: pointer;
-           margin-left: 150px;
-           margin-right: 20px;
-           height: 22px;
-           border-radius: 6px;
-           transition: opacity 0.8s;
-           align-self: center;
-          }
-
-          .HomePageButton:hover{
-            opacity: 0.7;
-          }
-
-          .HomePageButton:active{
-            opacity: 0.5;
-          }
-
-          .HelpPageButton{
-            background-color: #2C2A58;
-            color: #BD9C6C;
-            border: none;
-            cursor: pointer;
-            margin: 20px;
-            height: 22px;
-            border-radius: 6px;
-            transition: opacity 0.8s;
-            align-self: center;
-          }
-
-          .HelpPageButton:hover{
-            opacity: 0.7;
-          }
-
-          .HelpPageButton:active{
-            opacity: 0.5;
-          }
-
-          .DepartmentPageButton{
-            background-color: #2C2A58;
-            color: #BD9C6C;
-            border: none;
-            cursor: pointer;
-            margin: 20px;
-            height: 22px;
-            border-radius: 6px;
-            transition: opacity 0.8s;
-            align-self: center;
-          }
-
-          .DepartmentPageButton:hover{
-            opacity: 0.7;
-          }
-
-          .DepartmentPageButton:active{
-            opacity: 0.5;
-          }
-
-          .CourseTitle{
-            font-family: 'Segoe UI';
-            font-size: 18px;
-            font-weight: bold;
-            color: #2C2A58;
-            margin-top: 40px;
-            margin-bottom: 23px;
-            display: inline-block;
-            position: relative;
-          }
-
-          .CourseTitle:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            transform: scaleX(0);
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: #0087ca;
-            transform-origin: bottom right;
-            transition: transform 0.25s ease-out;
-          }
-
-          .CourseTitle:hover:after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-          }
-
-          .CoveredCourses{
-            font-family: 'Segoe UI';
-            color: #2C2A58;
-          }
-
-          .NavPane{
-            font-family: 'Segoe UI';
-            margin-top: 180px;
-            background-color: #2C2A58;
-            color: azure;
-          }
-
-          .EndingStatement{
-            font-family: 'Segoe UI';
-            margin-top: 44px;
-            margin-left: 30px;
-            text-align: center;
-            font-size: 16px;
-          }
-
-          .NavPane{
-            font-family: 'Segoe UI';
-            margin-top: 180px;
-            background-color: #2C2A58;
-            color: azure;
-          }
 
 
-        </style>
-
-    </head>
-
-    <body>
-        <div>
-            <img src="WebsitePictures/comScience_logo.png" alt="Department logo" title="" style="width:250px">
-
-            <button class="HomePageButton">
-                HOME
-              </button>
-    
-              <button class="HelpPageButton">
-                HELP
-              </button>
-    
-              <button class="DepartmentPageButton" >
-                ABOUT
-              </button>
-    
-        </div>
-
-        <div>
-            <hr>
-
-            <div>
-                <h1 class="CoveredCourses">
-                    Frequently Asked Questions - FAQ
-                </h1>
-            </div>
-
-          <div>
-            <p class="CourseTitle">
-              &#8226 <strong>About The Course In The First Year</strong>
-            </p>
-
-            <button type="button" class="collapsible">
-                Is The Course Hard?
-            </button>
-
-            <div class="content">
-                <p>
-                  The computer science course at the University of Ghana is challenging but immensely rewarding. It requires dedication and problem-solving skills. The curriculum covers a wide range of topics, from fundamentals to advanced technologies. The department provides strong support and a collaborative learning environment. While it's demanding, the difficulty contributes to a robust skill set. Remember, overcoming challenges is part of the learning process, and your perseverance will lead to success.
-                </p>
-            </div>
-
-            <button type="button" class="collapsible">
-                Why is it called Mathemathical Science?
-            </button>
-
-            <div class="content">
-                <p>
-                    Within the first year of your study as a student who wishes to pursue Computer Science, you start of as a student pursing Mathemathical Science which involves the foundational combination of Mathemathics, Economics, Geography, Statistics and all other fundamental courses required in your first year to qualify for Computer Science.
-                </p>
-            </div>
-
-            <button type="button" class="collapsible">
-                What is Placement?
-            </button>
-
-            <div class="content">
-                <p>
-                  Placements refer to how you will be assigned your course based on the grades you attained in your first year of education in Mathemathical Science. You may request for 3 choices (first choice, second choice and third choice of program) and based on your grades you will be assigned a course.
-                </p>
-            </div>
-
-            <button type="button" class="collapsible">
-                How are Examinations Like?
-            </button>
-
-            <div class="content">
-                <p>
-                  Examinations may vary based off the course and the preference of the lecturer in charge. Sometimes the examination is conducted online onsite, offsite, project or a physical inperson written examination
-                </p>
-              </div>
-            </div>
-
-            <div>
-                <p class="CourseTitle">
-                  &#8226 <strong>About the Department</strong>
-                </p>
-    
-                <button type="button" class="collapsible">
-                    Is There A Lab For Practical Examination/Classes
-                </button>
-    
-                <div class="content">
-                    <p>
-                        Yes we do have a hardware lab at the Department of Computer Sciecne
-                    </p>
-                </div>
-    
-                <button type="button" class="collapsible">
-                    How are The Lectureres Like?
-                </button>
-    
-                <div class="content">
-                    <p>
-                        Just like people, each lecturer is different but they are generally kind and helpful, a few might be considered strict but they only do so to help.
-                    </p>
-                </div>
-    
-                <button type="button" class="collapsible">
-                    Are We Restricted in The Courses We Can Pick Each Semester?
-                </button>
-    
-                <div class="content">
-                    <p>
-                        We aren't exactly restricted but we do have specific courses we are required to pick from. You can choose to add non weighted courses and sometimes even weighted courses beyond the specified ones but it is not recommended. The course is already challenging and involving.
-                    </p>
-                </div>
-    
-                <button type="button" class="collapsible">
-                    What are The Requirments To Get Computer Science as a Major?
-                </button>
-    
-                <div class="content">
-                    <p>
-                        Getting computer Science as a major usually means you will have to get excellent grades. Usually a B minimum in all DCIT courses and  C minimum in other courses should grat admission into the course. But it may also change depeding on the years activities and teaching.
-                    </p>
-                </div>
-
-                <div class="EndingStatement">
-                  <br>
-                  <br>
-                  <p>
-                    For more enquiries, please see a TA in the Hardware lab, at the Department of Computer Science to Clarify any specific doubts.
-                    <br>
-                    Thank You
+              <div class="NavPane">
+                <div>  
+                  Navigate
+                  <p> 
+                    <ul>
+                      <li>Contact Help</li>
+                      <li>Level Of Education</li>
+                      <li>Possible Careers</li>
+                      <li>Short Courses</li>
+                    </ul>   
                   </p>
                 </div>
-
-
-                <div class="NavPane">
-                  <div>  
-                    Navigate
-                    <p> 
-                      <ul>
-                        <li>Contact Help</li>
-                        <li>Level Of Education</li>
-                        <li>Possible Careers</li>
-                        <li>Short Courses</li>
-                      </ul>   
-                    </p>
-                  </div>
-                  
-                  <div>
-                    Academics
-                    <p>
-                      <ul>
-                        <li>Libraries</li>
-                        <li>Academic Calendar</li>
-                        <li>Timetable</li>
-                      </ul>
-                    </p>
-                  </div>
+                
+                <div>
+                  Academics
+                  <p>
+                    <ul>
+                      <li>Libraries</li>
+                      <li>Academic Calendar</li>
+                      <li>Timetable</li>
+                    </ul>
+                  </p>
                 </div>
+              </div>
 
         <script>
             var coll = document.getElementsByClassName("collapsible");
@@ -565,7 +353,8 @@
                 }
               });
             }
-            </script>
+          </script>
+          
     </body>
 </html>
 
