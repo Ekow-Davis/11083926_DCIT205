@@ -1,144 +1,327 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            About Page
-        </title>
+  <head>
+    <title>
+      Levels Of Education Offered
+    </title>
 
-        <style>
-          button{
-            font-family: 'Segoe UI';
-          }
+    <style>
 
-          .DepartmentLogo{
-            margin-left: 40px;
-          }
+      .NavPane{
+        font-family: 'Segoe UI';
+        margin-top: 180px;
+        background-color: #2C2A58;
+        color: azure;
+      }
 
-          .Introduction{
-            background-image:url(https://wallpapers.com/images/featured/technology-w65hwkhmusntb0j9.jpg);
-            background-repeat:no-repeat;
-            background-size: cover;
-            height: 80vh;
-          }
+      .HomePageButton{
+        background-color: #2C2A58;
+        color: #BD9C60;
+        border: none;
+        cursor: pointer;
+        margin-left: 150px;
+        margin-right: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        text-align: center;
+        text-decoration: bold;
+      }
 
-          .IntroText{
-            font-family: 'Segoe UI';
-            color: rgb(202, 176, 7);
-            font-size: 22px;
-            width: 350px;
-            margin-top: 10px;
-          }
+      .HomePageButton:hover{
+        opacity: 0.7;
+      }
 
-          .IntroBody{
-            color:azure;
-            font-size: 18px;
-            text-align: justify;
-            width: 330px;
-          }
+      .HomePageButton:active{
+        opacity: 0.5;
+      }
 
-          .HomePageButton{
-            background-color: #2C2A58;
-            color: #BD9C6C;
-            border: none;
-            cursor: pointer;
-            margin-left: 150px;
-            margin-right: 20px;
-            height: 18px;
-            border-radius: 6px;
-            transition: opacity 0.8s;
-            align-self: center;
-          }
+      .HelpPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
 
-          .HomePageButton:hover{
-            opacity: 0.7;
-          }
+      .HelpPageButton:hover{
+        opacity: 0.7;
+      }
 
-          .HomePageButton:active{
-            opacity: 0.5;
-          }
+      .HelpPageButton:active{
+        opacity: 0.5;
+      }
 
-          .HelpPage{
-            background-color: #2C2A58;
-            color: #BD9C6C;
-            border: none;
-            cursor: pointer;
-            margin: 20px;
-            height: 18px;
-            border-radius: 6px;
-            transition: opacity 0.8s;
-            align-self: center;
-          }
+      .DepartmentPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
 
-          .HelpPage:hover{
-            opacity: 0.7;
-          }
+      .DepartmentPageButton:hover{
+        opacity: 0.7;
+      }
 
-          .HelpPage:active{
-            opacity: 0.5;
-          }
+      .DepartmentPageButton:active{
+        opacity: 0.5;
+      }
 
-          .DepartmentPage{
-            background-color: #2C2A58;
-            color: #BD9C6C;
-            border: none;
-            cursor: pointer;
-            margin: 20px;
-            height: 18px;
-            border-radius: 6px;
-            transition: opacity 0.8s;
-            align-self: center;
-          }
+      .PagePicture1{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0,), rgba(0,0,0,0,)), url(WebsitePictures/interconnected.gif);
+        background-size: cover;
+        background-position: center;
+      }
 
-          .DepartmentPage:hover{
-            opacity: 0.7;
-          }
+      @media(max-width: 700px){
+        .row{
+          flex-direction: row;
+        }
+      }
 
-          .DepartmentPage:active{
-            opacity: 0.5;
-          }
+      .ImagesRow{
+       flex-basis: 280px;
+       border-radius: 8px;
+       margin: 30px;
+       position: relative;
+       overflow: hidden;
+       height: 100%;
+      }
 
-          .IntroductionTextControl{
-            margin-top: 10vh;
-          }
+      .ImagesRow img{
+        width: 100%;
+        border-radius: 8px;
+        height: 100%;
+      }
 
-        </style>
+      .LevelsOfEducation{
+        font-family: 'Segoe UI';
+      }
 
-    </head>
+      .icon{
+        margin-left: 40px;
+        margin-right: 20px;
+        color: #2C2A58
+      }
+      
+      .PossibleCareersButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
 
-    <body>
-        <div class="DepartmentLogo">
-          <img src="WebsitePictures/comScience_logo.png" alt="Department logo" title="" style="width:250px">
+      .ContactPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
 
-          <button class="HomePageButton">
-            HOME
-          </button>
+      .LevelsOfEducationButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
 
-          <button class="HelpPage">
-            HELP
-          </button>
+      .ShortCoursesButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }    
 
-          <button class="DepartmentPage" >
-            ABOUT
-          </button>
+      .Heading1{
+        font-family: 'Segoe UI';
+        color:#2C2A58;
+        text-align: center;
+        text-decoration: underline;
+      }
 
-        </div>
-        
-        <div class="Introduction">
+      .Paragraph1{
+        font-family: 'Segoe UI';
+        color:#2C2A58;
+      }
 
-          <div class="IntroductionTextControl">
-            <p class="IntroText">
-              Welcome to the Computer science Department, The place where Dreams become a reality.
-            </p>
+      .list1{
+        font-family: 'Segoe UI';
+        color:#2C2A58;
+      }
 
-            <p class="IntroBody">
-              At University of Ghana, our Computer Science Department is at the forefront of innovation, education, and research. As we navigate the ever-evolving landscape of technology, our mission is to foster a community of passionate learners, educators, and researchers who drive advancements in computing.
-            </P>
-          </div>
-        </div>
+      .overlay-text {
+        position: absolute;
+        top: 60%; 
+        left: 20%; 
+        transform: translate(-50%, -50%); 
+        font-family: 'Franklin Gothic Medium';
+        color: #fff; 
+        padding: 10px 20px; 
+        font-size: 60px; 
+        text-align: center;
+        width: 650px;
+      }
 
-        <div>
+    </style>
+
+  </head>
+
+  <body>
+    <div>
+      <img src="WebsitePictures/comScience_logo.png" alt="Department logo" title="" style="width:250px">
+
+      <button class="HomePageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FirstPage.html'">
+        HOME
+      </button>
+    
+      <button class="HelpPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FAQPage.html'">
+          HELP
+      </button>
+    
+      <button class="DepartmentPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\AboutPage.html'">
+          ABOUT
+      </button>
+
+      <button class="ContactPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ContactHelpPage.html'">
+        Contact
+      </button>
+
+      <button class="LevelsOfEducationButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\LevelsOfEducation.html'">
+        Levels
+      </button>
+
+      <button class="ShortCoursesButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ShortCourses.html'">
+        Short Courses
+      </button>
+
+      <button class="PossibleCareersButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\PossibleCarrers.html'">
+        Careers
+      </button>
+    </div>
+
+    <div>
+      <hr>
+      <img src="WebsitePictures/binary code gif.gif" alt="Picture" class="PagePicture1">
+      <div class="overlay-text">DEPARTMENT OF COMPUTER SCIENCE</div>
+    </div>
+
+    <div>
+      <hr>
+      <h1 class="Heading1">
+        Welcome
+      </h1>
+
+      <p class="Paragraph1">
+        Welcome to the vibrant and innovative Computer Science Department at the University of Ghana, where boundless possibilities unfold in the realm of technology. Nestled at the intersection of education and cutting-edge research, our department thrives on a commitment to excellence. As a hub for aspiring technologists, we offer a dynamic curriculum that explores the breadth of computer science, from fundamental principles to the latest advancements. Our dedicated faculty, comprised of industry experts and academics, guides students through an intellectually stimulating journey. Join us in shaping the future of technology, where creativity, collaboration, and a passion for innovation converge to create an inspiring learning environment. Welcome to a community that fosters growth, discovery, and limitless potential in the world of computer science.
+      </p>
+
+      <br>
+
+      <h1 class="Heading1">
+        Short Courses
+      </h1>
+
+      <p class="Paragraph1">
+        We Offer a variety of Short Courses. Use the buttons at the top of the page to view them. But for a sneak peak here are a few:
+      </p>
+      <ul class="list1">
+        <li>Data Science</li>
+        <li>Linux Administration</li>
+        <li>Oracle Database administration Fundamentals</li>
+        <li>Laptop Repairs</li> etc
+      </ul>
+
+      <h1 class="Heading1">
+        The Department
+      </h1>
+
+      <p class="Paragraph1">The department hosts some of teh most brilliant minds and lectureres who strive for ecellence in their students and themselves. Click the "About" button to find out more.</p>
+    </div>
+       
+
+
+
+            <div class="NavPane">
+              <div>  
+                Navigate
+                <p> 
+                  <ul class="List1">
+                    <li>Contact Help</li>
+                    <li>Level Of Education</li>
+                    <li>Possible Careers</li>
+                    <li>Short Courses</li>
+                  </ul>   
+                </p>
+              </div>
+                
+              <div>
+                Academics
+                <p>
+                  <ul class="List2">
+                    <li>Libraries</li>
+                    <li>Academic Calendar</li>
+                    <li>Timetable</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+          </script>
           
-        </div>
     </body>
+</html>
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  </body>
 
 </html>
