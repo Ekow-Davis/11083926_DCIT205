@@ -1,344 +1,516 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      Levels Of Education Offered
-    </title>
+    <head>
+        <title>
+          Courses For Computer Science Major-Minor
+        </title>
 
-    <style>
-      .HomePageButton{
-        background-color: #2C2A58;
-        color: #BD9C60;
-        border: none;
-        cursor: pointer;
-        margin-left: 150px;
-        margin-right: 20px;
-        height: 22px;
-        border-radius: 6px;
-        transition: opacity 0.8s;
-        text-align: center;
-        text-decoration: bold;
-      }
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      .HomePageButton:hover{
-        opacity: 0.7;
-      }
+        <style>
+          .collapsible {
+            background-color: #c8a166df;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+          }
 
-      .HomePageButton:active{
-        opacity: 0.5;
-      }
+          .active, .collapsible:hover {
+            background-color: #c7a36d;
+          }
 
-      .HelpPageButton{
-        background-color: #2C2A58;
-        color: #BD9C6C;
-        border: none;
-        cursor: pointer;
-        margin: 20px;
-        height: 22px;
-        border-radius: 6px;
-        transition: opacity 0.8s;
-        align-self: center;
-      }
+          .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+          }
 
-      .HelpPageButton:hover{
-        opacity: 0.7;
-      }
+          .HomePageButton{
+           background-color: #2C2A58;
+           color: #BD9C6C;
+           border: none;
+           cursor: pointer;
+           margin-left: 150px;
+           margin-right: 20px;
+           height: 22px;
+           border-radius: 6px;
+           transition: opacity 0.8s;
+           align-self: center;
+          }
 
-      .HelpPageButton:active{
-        opacity: 0.5;
-      }
+          .HomePageButton:hover{
+            opacity: 0.7;
+          }
 
-      .DepartmentPageButton{
-        background-color: #2C2A58;
-        color: #BD9C6C;
-        border: none;
-        cursor: pointer;
-        margin: 20px;
-        height: 22px;
-        border-radius: 6px;
-        transition: opacity 0.8s;
-        align-self: center;
-      }
+          .HomePageButton:active{
+            opacity: 0.5;
+          }
 
-      .DepartmentPageButton:hover{
-        opacity: 0.7;
-      }
+          .HelpPage{
+            background-color: #2C2A58;
+            color: #BD9C6C;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+            height: 22px;
+            border-radius: 6px;
+            transition: opacity 0.8s;
+            align-self: center;
+          }
 
-      .DepartmentPageButton:active{
-        opacity: 0.5;
-      }
+          .HelpPage:hover{
+            opacity: 0.7;
+          }
 
-      .PagePicture1{
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(rgba(0,0,0,0,), rgba(0,0,0,0,)), url(WebsitePictures/interconnected.gif);
-        background-size: cover;
-        background-position: center;
-      }
+          .HelpPage:active{
+            opacity: 0.5;
+          }
 
-      .column{
-        margin-top: 5%;
-        display: flex;
-        justify-content: space-between;
-      }
+          .DepartmentPage{
+            background-color: #2C2A58;
+            color: #BD9C6C;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+            height: 22px;
+            border-radius: 6px;
+            transition: opacity 0.8s;
+            align-self: center;
+          }
 
-      .LevelRow{
-        text-align: center;
-        flex-basis: 31%;
-        background: #35326e;
-        border-radius: 7px;
-        margin-bottom: 5%;
-        padding: 20px 14px;
-        box-sizing: border-box;
-        transition: 0.5s;
-        color:  #BD9C60;
-        cursor: pointer;
-      }
+          .DepartmentPage:hover{
+            opacity: 0.7;
+          }
 
-      .LevelRow:hover{
-        box-shadow: 0 0 20px 0px rgba(0,0,0,2);
-      }
-      @media(max-width: 700px){
-        .row{
-          flex-direction: row;
-        }
-      }
+          .DepartmentPage:active{
+            opacity: 0.5;
+          }
 
-      .ImagesRow{
-       flex-basis: 280px;
-       border-radius: 8px;
-       margin: 30px;
-       position: relative;
-       overflow: hidden;
-       height: 100%;
-      }
+          .CourseTitle{
+            font-family: 'Segoe UI';
+            font-weight: bold;
+            color: #2C2A58;
+          }
 
-      .ImagesRow img{
-        width: 100%;
-        border-radius: 8px;
-        height: 100%;
-      }
+          .CourseOnPage{
+            font-family: 'Segoe UI';
+            color: #2C2A58;
+          }
 
-      .LevelsOfEducation{
-        font-family: 'Segoe UI';
-      }
+          .CoursesCovered{
+            font-family: 'Segoe UI';
+            color: #2C2A58;
+          }
 
-      .icon{
-        margin-left: 40px;
-        margin-right: 20px;
-        color: #2C2A58
-      }
+          .NavPane{
+            font-family: 'Segoe UI';
+            margin-top: 180px;
+            background-color: #2C2A58;
+            color: azure;
+          }
+
+          .PossibleCareersButton{
+            background-color: #2C2A58;
+            color: #BD9C6C;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+            height: 22px;
+            border-radius: 6px;
+            transition: opacity 0.8s;
+            align-self: center;
+          }
+
+          .ContactPageButton{
+            background-color: #2C2A58;
+            color: #BD9C6C;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+            height: 22px;
+            border-radius: 6px;
+            transition: opacity 0.8s;
+            align-self: center;
+          }
+
+          .LevelsOfEducationButton{
+            background-color: #2C2A58;
+            color: #BD9C6C;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+            height: 22px;
+            border-radius: 6px;
+            transition: opacity 0.8s;
+            align-self: center;
+          }
+
+          .ShortCoursesButton{
+            background-color: #2C2A58;
+            color: #BD9C6C;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+            height: 22px;
+            border-radius: 6px;
+            transition: opacity 0.8s;
+            align-self: center;
+          }
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <div>
+            <img src="WebsitePictures/comScience_logo.png" alt="Department logo" title="" style="width:250px">
+
+            <button class="HomePageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FirstPage.html'">
+              HOME
+            </button>
+          
+            <button class="HelpPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FAQPage.html'">
+                HELP
+            </button>
+          
+            <button class="DepartmentPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\AboutPage.html'">
+                ABOUT
+            </button>
       
-      .PossibleCareersButton{
-        background-color: #2C2A58;
-        color: #BD9C6C;
-        border: none;
-        cursor: pointer;
-        margin: 20px;
-        height: 22px;
-        border-radius: 6px;
-        transition: opacity 0.8s;
-        align-self: center;
-      }
-
-      .ContactPageButton{
-        background-color: #2C2A58;
-        color: #BD9C6C;
-        border: none;
-        cursor: pointer;
-        margin: 20px;
-        height: 22px;
-        border-radius: 6px;
-        transition: opacity 0.8s;
-        align-self: center;
-      }
-
-      .LevelsOfEducationButton{
-        background-color: #2C2A58;
-        color: #BD9C6C;
-        border: none;
-        cursor: pointer;
-        margin: 20px;
-        height: 22px;
-        border-radius: 6px;
-        transition: opacity 0.8s;
-        align-self: center;
-      }
-
-      .ShortCoursesButton{
-        background-color: #2C2A58;
-        color: #BD9C6C;
-        border: none;
-        cursor: pointer;
-        margin: 20px;
-        height: 22px;
-        border-radius: 6px;
-        transition: opacity 0.8s;
-        align-self: center;
-      }
-
-      .NavPane{
-        font-family: 'Segoe UI';
-        margin-top: 180px;
-        background-color: #2C2A58;
-        color: azure;
-      }
-
-    </style>
-
-  </head>
-
-  <body>
-    <div>
-      <img src="WebsitePictures/comScience_logo.png" alt="Department logo" title="" style="width:250px">
-
-      <button class="HomePageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FirstPage.html'">
-        HOME
-      </button>
+            <button class="ContactPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ContactHelpPage.html'">
+              Contact
+            </button>
+      
+            <button class="LevelsOfEducationButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\LevelsOfEducation.html'">
+              Levels
+            </button>
+      
+            <button class="ShortCoursesButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ShortCourses.html'">
+              Short Courses
+            </button>
+      
+            <button class="PossibleCareersButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\PossibleCarrers.html'">
+              Careers
+            </button>
     
-      <button class="HelpPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FAQPage.html'">
-          HELP
-      </button>
-    
-      <button class="DepartmentPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\AboutPage.html'">
-          ABOUT
-      </button>
-
-      <button class="ContactPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ContactHelpPage.html'">
-        Contact
-      </button>
-
-      <button class="LevelsOfEducationButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\LevelsOfEducation.html'">
-        Levels
-      </button>
-
-      <button class="ShortCoursesButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ShortCourses.html'">
-        Short Courses
-      </button>
-
-      <button class="PossibleCareersButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\PossibleCarrers.html'">
-        Careers
-      </button>
-    </div>
-
-    <div>
-      <hr>
-      <img src="WebsitePictures/interconnected.gif" alt="Picture" class="PagePicture1">
-    </div>
-
-    <div>
-      <hr>
-      <div>
-        <h1>
-          Levels Of Education
-        </h1>
-      </div>
-
-      <p>
-        <strong>Undergraduate Program:</strong>
-        Embark on a transformative journey in our undergraduate program, where aspiring minds delve into the intricacies of computer science. Explore core principles, programming languages, and cutting-edge technologies, preparing for a dynamic career in the tech industry.
-        <br>
-        <br>
-
-        <strong>MPhil Program:</strong>
-        Elevate your expertise with our MPhil program, designed for in-depth research and specialization. Engage in advanced coursework, collaborative projects, and contribute to the forefront of computer science knowledge. Shape the future of technology with a mastery that extends beyond the ordinary.
-        <br>
-        <br>
-
-        <strong>Doctorate Program:</strong>
-        Reach the pinnacle of academic achievement in our doctoral program. Undertake groundbreaking research, contribute to global conversations, and become a thought leader in computer science. Join a community of scholars pushing the boundaries of knowledge and innovation. Your journey to redefine what's possible in computer science starts here.
-        <br>
-        <br>
-      </p>
-    </div>
-
-    <div>
-      <section class="LevelsOfEducation">
-        <h2>
-          We Offer
-        </h2>
-        
-        <div class="column">
-          <div class="LevelRow">
-            <h3>
-              Undergraduate
-            </h3>
-            <p>
-              BSc. Computer Science
-              <br>
-              BSc. Computer Science & Statistics
-              <br>
-              BSc. Computer Science & Mathematics
-              <br>
-            </p>
-          </div>
-          <div class="LevelRow">
-            <h3>
-              Mphil
-            </h3>
-            <p>
-              MSc. Computer Science<br>
-              <br>
-              MPhil. Compter Sciecne<br>
-              <br>
-            </p>
-          </div>
-          <div class="LevelRow">
-            <h3>
-              Doctorate
-            </h3>
-            <p>
-              Ph.D Computer Science
-            </p>
-          </div>
         </div>
 
-      </section>
+        <div>
+            <hr>
 
-      <section class="LevelsOfEducation">
+            <div>
+                <h1 class="CoursesCovered">
+                    Courses Covered Throughtout School Period
+                </h1>
+            </div>
 
-        <div class="column">
-          <div class="ImagesRow">
-            <img src="WebsitePictures/Undergraduate.jpeg">
-          </div>
-          <div class="ImagesRow">
-            <img src="WebsitePictures/masters.jpg">
-          </div>
-          <div class="ImagesRow">
-            <img src="WebsitePictures/Doctorate.jpg">
-          </div>
+        <div>
+            <p class="CourseTitle">
+              Computer Science Major-Minor
+            </p>
         </div>
 
-      </section>
+        <div>
+            <p class="CourseOnPage">
+                Computer Science with Statistics
+            </p>
 
+            <button type="button" class="collapsible">
+              First Year
+            </button>
 
+          <div class="content">
+              <p>
+                  First Semester
+              </p>
+              <ul>
+                <li>Math 123 - Vectors and Geometry</li>
+                <li>Math 121 - Algebra and Trignometry</li>
+                <li>DCIT 101 - Introduction to Computer</li>
+                <li>DCIT 103 - office Productivity Tools</li>
+                <li>UGRC 150 - Critical Thinking and Practical Reasoning</li>
+                <li>Stat 111 - Introduction to Statistics and Probability I</li>
+              </ul>
 
-              <div class="NavPane">
-                <div>  
-                  Navigate
-                  <p> 
-                    <ul>
-                      <li>Contact Help</li>
-                      <li>Level Of Education</li>
-                      <li>Possible Careers</li>
-                      <li>Short Courses</li>
-                    </ul>   
-                  </p>
-                </div>
-                
-                <div>
-                  Academics
-                  <p>
-                    <ul>
-                      <li>Libraries</li>
-                      <li>Academic Calendar</li>
-                      <li>Timetable</li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
+              <p>
+                  Second Semester
+              </p>
 
-        <script>
+              <ul>
+                <li>Math 126 - Algebra and Geometry</li>
+                <li>Math 122 - Calculus I</li>
+                <li>DCIT 102 - Computer Hardware Fundamentals and Circuits</li>
+                <li>DCIT 104 - Programming</li>
+                <li>UGRC 110 - Academic writing</li>
+                <li>Stat 112 - Introduction to Statistics and Probability I</li>
+              </ul>
+          </div>
+
+          <button type="button" class="collapsible">
+              Second Year
+          </button>
+
+          <div class="content">
+              <p>
+                  First Semester
+              </p>
+              <ul>
+                  <li>DCIT 201 - Programming I	3	</li>
+                  <li>DCIT 203 - Digital and Logic Systems Design	3	</li>                
+                  <li>UGRC 210 - Academic Writing II	3	</li>
+                  <li>MATH 223 - Calculus II	3	</li>
+              </ul>
+
+              <p>
+                  Second Semester
+              </p>
+
+              <ul>              
+                  <li>DCIT 202 - Application Development	3	 </li>
+                  <li>DCIT 204 - Data Structures & Algorithm I	3	 </li>
+                  <li>DCIT 208 - Software Engineering	3	 </li>              
+                  <li>UGRC 220 - Introduction to African Studies	3	 </li>
+              </ul>
+          </div>
+
+          <button type="button" class="collapsible">
+              Third Year
+          </button>
+
+          <div class="content">
+              <p>
+                  First Semester
+              </p>
+              <ul>
+                  <li>DCIT 301 - Operating Systems	3</li>
+                  <li>DCIT 303 - Computer Networks	3	 </li>
+                  <li>DCIT 303 - Computer Networks	3	 </li>                  
+              </ul>
+              <p>Electives:</p>
+              <ul>
+                <li>DCIT 309 - Embedded Systems and IoT	3	</li>
+                <li>DCIT 313 - Introduction to Artificial Intelligence	3	</li>
+              </ul>
+
+              <p>
+                  Second Semester
+              </p>
+
+              <ul>              
+                <li>DCIT 313 - Introduction to Artificial Intelligence	3	 </li>
+                <li>DCIT 308 - Data Structures and Algorithms II	3	 </li>
+              </ul>
+              <p>Electives:</p>
+              <ul>
+                <li>DCIT 304 - Research Methods	3	</li>
+                <li>DCIT 318 - Programming II	3	</li>
+              </ul>        
+          </div>
+
+          <button type="button" class="collapsible">
+              Fourth Year
+          </button>
+
+          <div class="content">
+              <p>
+                  First Semester
+              </p>
+              <ul>
+                  <li>DCIT 400 - Project	3	 </li>
+                  <li>DCIT 401 - Social, Legal, Ethical and Professional Issues	3	 </li>
+                  <li>DCIT 407 - Image Processing	3	 </li>                         
+              </ul>
+              <p>Electives:</p>
+              <ul>
+                <li>DCIT 403 - Designing Intelligent Agents	3	</li>
+                <li>DCIT 405 - Statistical Models and Methods for Data Science	3	</li>
+                <li>DCIT 411 - Bioinformatics	3	</li>
+                <li>DCIT 417 - Network Performance Analysis and Modeling	3	</li>
+                <li>DCIT 423 - Network Servers and Infrastructure	3	</li>
+              </ul>
+
+              <p>
+                  Second Semester
+              </p>
+
+              <ul>            
+                <li>DCIT 400 - Project	3	 </li>
+                <li>DCIT 402 - Management Principles in Computing	3	 </li>
+                <li>DCIT 418 - Systems and Network Security	3	 </li>
+                <li>DCIT 428 - Wireless Systems and Networks	3	 </li>
+              </ul>
+              <p>Electives:</p>
+              <ul>
+                <li>DCIT 404 - Advanced Databases	3	</li>
+                <li>DCIT 408 - Compilers	3	</li>
+                <li>DCIT 408 - Compilers	3	</li>
+                <li>DCIT 412 - Computer Vision	3	</li>
+                <li>DCIT 414 - Data Mining and Warehousing	3	</li>
+                <li>DCIT 416 - Digital Signal Processing	3	</li>
+                <li>DCIT 422 - Information Visualization	3	</li>
+                <li>DCIT 426 - Telecommunication Systems	3	</li>
+              </ul>
+            </div>
+
+          <div>
+            <p class="CourseOnPage">
+                Computer Science with Mathematics
+            </p>
+
+            <button type="button" class="collapsible">
+              First Year
+            </button>
+
+            <div class="content">
+              <p>
+                  First Semester
+              </p>
+              <ul>
+                  <li>Math 123</li>
+                  <li>Math 121</li>
+                  <li>DCIT 101</li>
+                  <li>DCIT 103</li>
+                  <li>UGRC 150</li>
+                  <li>Stat 111</li>
+              </ul>
+
+              <p>
+                  Second Semester
+              </p>
+
+              <ul>
+                  <li>Math 126</li>
+                  <li>Math 122</li>
+                  <li>DCIT 102</li>
+                  <li>DCIT 104</li>
+                  <li>UGRC 110</li>
+                  <li>Stat 112</li>
+            </div>
+
+            <button type="button" class="collapsible">
+              Second Year
+            </button>
+
+            <div class="content">
+              <p>
+                  First Semester
+              </p>
+              <ul>
+                  <li>DCIT 201</li>
+                  <li>DCIT 203</li>
+                  <li>DCIT 205</li>
+                  <li>DCIT 207</li>
+                  <li>CBAS 210</li>
+                  <li>Math 223</li>
+              </ul>
+
+              <p>
+                  Second Semester
+              </p>
+
+              <ul>
+                  <li>Math </li>
+                  <li>DCIT </li>
+                  <li>DCIT </li>
+                  <li>DCIT </li>
+                  <li>DCIT </li>
+                  <li>CBAS </li>
+            </div>
+
+            <button type="button" class="collapsible">
+              Third Year
+            </button>
+
+            <div class="content">
+              <p>
+                  First Semester
+              </p>
+              <ul>
+                  <li>Math </li>
+                  <li>Math </li>
+                  <li>DCIT </li>
+                  <li>DCIT </li>
+                  <li>UGRC </li>
+                  <li>Stat </li>
+              </ul>
+
+              <p>
+                  Second Semester
+              </p>
+
+              <ul>
+                  <li>Math </li>
+                  <li>Math </li>
+                  <li>DCIT </li>
+                  <li>DCIT </li>
+                  <li>UGRC </li>
+                  <li>Stat </li>
+            </div>
+
+          <button type="button" class="collapsible">
+              Fourth Year
+          </button>
+
+          <div class="content">
+              <p>
+                  First Semester
+              </p>
+              <ul>
+                  <li>Math </li>
+                  <li>Math </li>
+                  <li>DCIT </li>
+                  <li>DCIT </li>
+                  <li>UGRC </li>
+                  <li>Stat </li>
+              </ul>
+
+              <p>
+                  Second Semester
+              </p>
+
+              <ul>
+                  <li>Math </li>
+                  <li>Math </li>
+                  <li>DCIT </li>
+                  <li>DCIT </li>
+                  <li>UGRC </li>
+                  <li>Stat </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="NavPane">
+            <div>  
+              Navigate
+              <p> 
+                <ul>
+                  <li>Contact Help</li>
+                  <li>Level Of Education</li>
+                  <li>Possible Careers</li>
+                  <li>Short Courses</li>
+                </ul>   
+              </p>
+            </div>
+            
+            <div>
+              Academics
+              <p>
+                <ul>
+                  <li>Libraries</li>
+                  <li>Academic Calendar</li>
+                  <li>Timetable</li>
+                </ul>
+              </p>
+            </div>
+
+          <script>
             var coll = document.getElementsByClassName("collapsible");
             var i;
             
@@ -353,16 +525,7 @@
                 }
               });
             }
-          </script>
-          
+            </script>
+
     </body>
-</html>
-
-    </div>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-  </body>
-
 </html>
