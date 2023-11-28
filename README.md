@@ -14,4 +14,8 @@ I made 10 webpages
 9.	ShortCourses.html – A page with the short courses offered by the department and the amount required.
 10.	SingeMajor.html - Shows courses done as a computer science Singe Major or Information Technology Single Major student in relation to the Computer Science Department
 
+
+Clone Repository
+
+
 What I learnt from the project was how to use the inspect function to understand the layout of the website, improved my knowledge of CSS functions to better style webpages as well as corrected any gaps in my understanding about the syntax for html and CSS. I also learnt the use and importance of JavaScript in web pages to make them more interactive, how to limk together webpages and how to use CSS to create reactive elements.
