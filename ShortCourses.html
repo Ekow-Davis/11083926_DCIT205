@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Short Courses we Offer
+    </title>
+
+    <style>
+      .HomePageButton{
+        background-color: #2C2A58;
+        color: #BD9C60;
+        border: none;
+        cursor: pointer;
+        margin-left: 150px;
+        margin-right: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        text-align: center;
+        text-decoration: bold;
+      }
+
+      .HomePageButton:hover{
+        opacity: 0.7;
+      }
+
+      .HomePageButton:active{
+        opacity: 0.5;
+      }
+
+      .HelpPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .HelpPageButton:hover{
+        opacity: 0.7;
+      }
+
+      .HelpPageButton:active{
+        opacity: 0.5;
+      }
+
+      .DepartmentPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .DepartmentPageButton:hover{
+        opacity: 0.7;
+      }
+
+      .DepartmentPageButton:active{
+        opacity: 0.5;
+      }
+
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI';
+        box-sizing: border-box;
+      }
+
+      .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #322d7f;
+      }
+
+      .container{
+        position: relative;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 60px 0;
+        gap: 60px;
+      }
+
+      .container .box{
+        position: relative;
+        width: 300px;
+        height: 350px;
+        background: #2e2e2e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container .box .content{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 0 20px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .container .box .content .icon{
+        color: var(--clr);
+        width: 80px;
+        height: 80px;
+        box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 6px var(--clr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5em;
+        background: #2e2e2e;
+        transition: 0.5s ease-in-out;
+      }
+
+      .container .box:hover .content .icon{
+        box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 300px var(--clr);
+        background: var(--clr);
+        color: #2e2e2e;
+      }
+
+      .container .box .content .text h3{
+        font-size: 1.5em;
+        color: #fff;
+        font-weight: 400;
+        transition: 0.5s ease-in-out;
+      }
+
+      .container .box:hover .content .text  h3{
+        color: #2e2e2e;
+      }
+
+      .container .box .content .text p{
+        color: #999;
+        transition: 0.5s ease-in-out;
+      }
+
+      .container .box:hover .content .text p{
+        color: #2e2e2e;
+      }
+
+      .container .box .content .text a{
+        position: relative;
+        background: var(--clr);
+        color: #2e2e2e;
+        padding: 8px 15px;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 400;
+        margin-top: 10px;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+      }
+
+      .container .box:hover .content .text a{
+        background: #2e2e2e;
+        color: var(--clr);
+      }
+
+      .ShortCoursesMessage{
+        font-family:'Franklin Gothic Medium';
+        color:#2C2A58;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: #BD9C60;
+        text-align: center;
+      }
+
+      .NavPane{
+        font-family: 'Segoe UI';
+        margin-top: 180px;
+        background-color: #2C2A58;
+        color: azure;
+      }
+
+      .PossibleCareersButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .ContactPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .LevelsOfEducationButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .ShortCoursesButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <img src="WebsitePictures/comScience_logo.png" alt="Department logo" title="" style="width:250px">
+
+      <button class="HomePageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FirstPage.html'">
+        HOME
+      </button>
+    
+      <button class="HelpPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FAQPage.html'">
+          HELP
+      </button>
+    
+      <button class="DepartmentPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\AboutPage.html'">
+          ABOUT
+      </button>
+
+      <button class="ContactPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ContactHelpPage.html'">
+        Contact
+      </button>
+
+      <button class="LevelsOfEducationButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\LevelsOfEducation.html'">
+        Levels
+      </button>
+
+      <button class="ShortCoursesButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ShortCourses.html'">
+        Short Courses
+      </button>
+
+      <button class="PossibleCareersButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\PossibleCarrers.html'">
+        Careers
+      </button>
+      </div>
+
+    <div>
+      <hr>
+    </div>
+
+    <div>
+      <h1 class="ShortCoursesMessage">
+        SHORT COURSES
+      </h1>
+    </div>
+
+   <div class="body">
+
+    <div class="container">
+      <div class="box" style="--clr:#89ec5b;">
+        <div class="content">
+          <div class="icon"><ion-icon name="pie-chart"></ion-icon></div>
+          <div class="text">
+            <h3>Data Science</h3>
+            <p>Analyze Data<br> GHS 1,799.00</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="box" style="--clr:#eb5ae5;">
+        <div class="content">
+          <div class="icon"><ion-icon name="phone-portrait"></ion-icon></div>
+          <div class="text">
+            <h3>Mobile Application Development</h3>
+            <p>Create Your own Apps<br>GHS 1,000.00</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="box" style="--clr:#5b98eb;">
+        <div class="content">
+          <div class="icon"><ion-icon name="globe"></ion-icon></div>
+          <div class="text">
+            <h3>Introduction To Web Programming</h3>
+            <p>Analyze Data <br> GHS 1,155.00</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>      
+        <div class="box" style="--clr:#cbce0e;">
+          <div class="content">
+            <div class="icon"><ion-icon name="card"></ion-icon></div>
+            <div class="text">
+              <h3>Digital Marketing</h3>
+              <p>Marketing On Digital Platform<br>GHS1,155.00</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      <div class="box" style="--clr:#dd4a6e;">
+        <div class="content">
+          <div class="icon"><ion-icon name="shield-half"></ion-icon></div>
+          <div class="text">
+            <h3>Information Security & Ethical Hacking</h3>
+            <p>Hacking and the Necessary security measures to counter it<br>GHS 1,195.00</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="box" style="--clr:#5bebda;">
+        <div class="content">
+          <div class="icon"><ion-icon name="code-slash"></ion-icon></ion-icon></div>
+          <div class="text">
+            <h3>Software Development</h3>
+            <p>Developing Software for varying platforms<br>GHS 1,799.00</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   </div>
+
+   <div class="NavPane">
+    <div>  
+      Navigate
+      <p> 
+        <ul>
+          <li>Contact Help</li>
+          <li>Level Of Education</li>
+          <li>Possible Careers</li>
+          <li>Short Courses</li>
+        </ul>   
+      </p>
+    </div>
+    
+    <div>
+      Academics
+      <p>
+        <ul>
+          <li>Libraries</li>
+          <li>Academic Calendar</li>
+          <li>Timetable</li>
+        </ul>
+      </p>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

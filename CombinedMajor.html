@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Combined Major Computer Science
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+
+          .collapsible {
+            background-color: #c8a166df;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+          }
+
+          .active, .collapsible:hover {
+            background-color: #c7a36d;
+          }
+
+          .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+          }
+
+          .HomePageButton{
+           background-color: #2C2A58;
+           color: #BD9C6C;
+           border: none;
+           cursor: pointer;
+           margin-left: 150px;
+           margin-right: 20px;
+           height: 22px;
+           border-radius: 6px;
+           transition: opacity 0.8s;
+           align-self: center;
+          }
+
+          .HomePageButton:hover{
+            opacity: 0.7;
+          }
+
+          .HomePageButton:active{
+            opacity: 0.5;
+          }
+
+          .HelpPageButton{
+            background-color: #2C2A58;
+            color: #BD9C6C;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+            height: 22px;
+            border-radius: 6px;
+            transition: opacity 0.8s;
+            align-self: center;
+          }
+
+          .HelpPageButton:hover{
+            opacity: 0.7;
+          }
+
+          .HelpPageButton:active{
+            opacity: 0.5;
+          }
+
+          .DepartmentPageButton{
+            background-color: #2C2A58;
+            color: #BD9C6C;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+            height: 22px;
+            border-radius: 6px;
+            transition: opacity 0.8s;
+            align-self: center;
+          }
+
+          .DepartmentPageButton:hover{
+            opacity: 0.7;
+          }
+
+          .DepartmentPageButton:active{
+            opacity: 0.5;
+          }
+
+          .CourseTitle{
+            font-family: 'Segoe UI';
+            font-size: 18px;
+            font-weight: bold;
+            color: #2C2A58;
+            margin-top: 40px;
+            margin-bottom: 23px;
+            display: inline-block;
+            position: relative;
+          }
+
+          .CourseTitle:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #0087ca;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+          }
+
+          .CourseTitle:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+          }
+
+          .CoveredCourses{
+            font-family: 'Segoe UI';
+            color: #2C2A58;
+          }
+
+          .NavPane{
+            font-family: 'Segoe UI';
+            margin-top: 180px;
+            background-color: #2C2A58;
+            color: azure;
+          }
+
+          .PossibleCareersButton{
+            background-color: #2C2A58;
+            color: #BD9C6C;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+            height: 22px;
+            border-radius: 6px;
+            transition: opacity 0.8s;
+            align-self: center;
+          }
+
+          .ContactPageButton{
+            background-color: #2C2A58;
+            color: #BD9C6C;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+            height: 22px;
+            border-radius: 6px;
+            transition: opacity 0.8s;
+            align-self: center;
+          }
+
+          .LevelsOfEducationButton{
+            background-color: #2C2A58;
+            color: #BD9C6C;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+            height: 22px;
+            border-radius: 6px;
+            transition: opacity 0.8s;
+            align-self: center;
+          }
+
+          .ShortCoursesButton{
+            background-color: #2C2A58;
+            color: #BD9C6C;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+            height: 22px;
+            border-radius: 6px;
+            transition: opacity 0.8s;
+            align-self: center;
+          }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div>
+            <img src="WebsitePictures/comScience_logo.png" alt="Department logo" title="" style="width:250px">
+
+            <button class="HomePageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FirstPage.html'">
+              HOME
+            </button>
+          
+            <button class="HelpPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FAQPage.html'">
+                HELP
+            </button>
+          
+            <button class="DepartmentPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\AboutPage.html'">
+                ABOUT
+            </button>
+      
+            <button class="ContactPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ContactHelpPage.html'">
+              Contact
+            </button>
+      
+            <button class="LevelsOfEducationButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\LevelsOfEducation.html'">
+              Levels
+            </button>
+      
+            <button class="ShortCoursesButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ShortCourses.html'">
+              Short Courses
+            </button>
+      
+            <button class="PossibleCareersButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\PossibleCarrers.html'">
+              Careers
+            </button>
+    
+        </div>
+
+        <div>
+            <hr>
+
+            <div>
+                <h1 class="CoveredCourses">
+                    Courses Covered Throughtout School Period
+                </h1>
+            </div>
+
+          <div>
+            <p class="CourseTitle">
+              &#8226 <strong>Computer Science & Statistics Combined Major</strong>
+            </p>
+
+            <button type="button" class="collapsible">
+                First Year
+            </button>
+
+            <div class="content">
+                <p>
+                    <strong>First Semester</strong>
+                </p>
+                <ul>
+                  <li>Math 123 - Vectors and Geometry</li>
+                  <li>Math 121 - Algebra and Trignometry</li>
+                  <li>DCIT 101 - Introduction to Computer</li>
+                  <li>DCIT 103 - office Productivity Tools</li>
+                  <li>UGRC 150 - Critical Thinking and Practical Reasoning</li>
+                  <li>Stat 111 - Introduction to Statistics and Probability I</li>
+                </ul>
+
+                <p>
+                    <strong>Second Semester</strong>
+                </p>
+
+                <ul>
+                  <li>Math 126 - Algebra and Geometry</li>
+                  <li>Math 122 - Calculus I</li>
+                  <li>DCIT 102 - Computer Hardware Fundamentals and Circuits</li>
+                  <li>DCIT 104 - Programming</li>
+                  <li>UGRC 110 - Academic writing</li>
+                  <li>Stat 112 - Introduction to Statistics and Probability I</li>
+                </ul>
+            </div>
+
+            <button type="button" class="collapsible">
+                Second Year
+            </button>
+
+            <div class="content">
+              <p>
+                First Semester
+              </p>
+              <ul>
+                <li>DCIT 201 - Programming I	3	</li>
+                <li>DCIT 203 - Digital and Logic Systems Design	3	</li>                
+                <li>UGRC 210 - Academic Writing II	3	</li>
+                <li>MATH 223 - Calculus II	3	</li>
+              </ul>
+
+              <p>
+                Second Semester
+              </p>
+
+              <ul>              
+                <li>DCIT 202 - Application Development	3	 </li>
+                <li>DCIT 204 - Data Structures & Algorithm I	3	 </li>
+                <li>DCIT 208 - Software Engineering	3	 </li>              
+                <li>UGRC 220 - Introduction to African Studies	3	 </li>
+              </ul>
+            </div>
+
+            <button type="button" class="collapsible">
+                Third Year
+            </button>
+
+            <div class="content">
+              <p>
+                First Semester
+              </p>
+              <ul>
+                <li>DCIT 301 - Operating Systems	3</li>
+                <li>DCIT 303 - Computer Networks	3	 </li>
+                <li>DCIT 303 - Computer Networks	3	 </li>                  
+              </ul>
+              <p>Electives:</p>
+              <ul>
+                <li>DCIT 309 - Embedded Systems and IoT	3	</li>
+                <li>DCIT 313 - Introduction to Artificial Intelligence	3	</li>
+              </ul>
+
+              <p>
+                Second Semester
+              </p>
+
+              <ul>              
+                <li>DCIT 313 - Introduction to Artificial Intelligence	3	 </li>
+                <li>DCIT 308 - Data Structures and Algorithms II	3	 </li>
+              </ul>
+              <p>Electives:</p>
+              <ul>
+                <li>DCIT 304 - Research Methods	3	</li>
+                <li>DCIT 318 - Programming II	3	</li>
+              </ul>     
+            </div>
+
+            <button type="button" class="collapsible">
+                Fourth Year
+            </button>
+
+            <div class="content">
+              <p>
+                First Semester
+              </p>
+              <ul>
+                <li>DCIT 400 - Project	3	 </li>
+                <li>DCIT 401 - Social, Legal, Ethical and Professional Issues	3	 </li>
+                <li>DCIT 407 - Image Processing	3	 </li>                         
+              </ul>
+              <p>Electives:</p>
+              <ul>
+                <li>DCIT 403 - Designing Intelligent Agents	3	</li>
+                <li>DCIT 405 - Statistical Models and Methods for Data Science	3	</li>
+                <li>DCIT 411 - Bioinformatics	3	</li>
+                <li>DCIT 417 - Network Performance Analysis and Modeling	3	</li>
+                <li>DCIT 423 - Network Servers and Infrastructure	3	</li>
+              </ul>
+
+              <p>
+                Second Semester
+              </p>
+
+              <ul>            
+                <li>DCIT 400 - Project	3	 </li>
+                <li>DCIT 402 - Management Principles in Computing	3	 </li>
+                <li>DCIT 418 - Systems and Network Security	3	 </li>
+                <li>DCIT 428 - Wireless Systems and Networks	3	 </li>
+              </ul>
+              <p>Electives:</p>
+              <ul>
+                <li>DCIT 404 - Advanced Databases	3	</li>
+                <li>DCIT 408 - Compilers	3	</li>
+                <li>DCIT 408 - Compilers	3	</li>
+                <li>DCIT 412 - Computer Vision	3	</li>
+                <li>DCIT 414 - Data Mining and Warehousing	3	</li>
+                <li>DCIT 416 - Digital Signal Processing	3	</li>
+                <li>DCIT 422 - Information Visualization	3	</li>
+                <li>DCIT 426 - Telecommunication Systems	3	</li>
+              </ul>
+
+              </div>
+            </div>
+
+            <div>
+                <p class="CourseTitle">
+                  &#8226 <strong>Computer Science & Mathemathics Combined Major</strong>
+                </p>
+    
+                <button type="button" class="collapsible">
+                    First Year
+                </button>
+    
+                <div class="content">
+                    <p>
+                        <strong>First Semester</strong>
+                    </p>
+                    <ul>
+                      <li>Math 123 - Vectors and Geometry</li>
+                      <li>Math 121 - Algebra and Trignometry</li>
+                      <li>DCIT 101 - Introduction to Computer</li>
+                      <li>DCIT 103 - office Productivity Tools</li>
+                      <li>UGRC 150 - Critical Thinking and Practical Reasoning</li>
+                      <li>Stat 111 - Introduction to Statistics and Probability I</li>
+                  </ul>
+    
+                    <p>
+                        <strong>Second Semester</strong>
+                    </p>
+    
+                    <ul>
+                      <li>Math 126 - Algebra and Geometry</li>
+                      <li>Math 122 - Calculus I</li>
+                      <li>DCIT 102 - Computer Hardware Fundamentals and Circuits</li>
+                      <li>DCIT 104 - Programming</li>
+                      <li>UGRC 110 - Academic writing</li>
+                      <li>Stat 112 - Introduction to Statistics and Probability I</li>
+                    </ul>
+                </div>
+    
+                <button type="button" class="collapsible">
+                    Second Year
+                </button>
+    
+                <div class="content">
+
+                  <p>
+                    Students can major or minor in Computer Science. The Level 400 courses are for students who opt for a major in Computer Science only. Student minoring in Computer Science shall take at least 9 credits of any of the under listed courses per semester at level 200 and 6 credits per semester at level 300. Students who intend to major in Computer Science shall take 9 credits per semester at level 200 and 12 credits per semester at level 300.
+                  </p>
+                  <br>
+
+                    <p>
+                        <strong>First Semester</strong>>
+                    </p>
+                    <ul>
+                        <li>DCIT 201 -	Programming I	3	</li>
+                        <li>DCIT 203 - Digital and Logic Systems Design	3	</li>
+                        <li>UGRC 210 - Academic Writing II	3	</li>
+                        <li>MATH 223 -	Calculus II	3	</li>                    
+                    </ul>
+                    <p> With 4 additional courses decided upon by the Math Department</p>
+    
+                    <p>
+                        <strong>Second Semester</strong>>
+                    </p>
+    
+                    <ul>                
+                        <li>DCIT 202 -	Mobile Application Development	3	 </li>
+                        <li>DCIT 204 -	Data Structures & Algorithm I	3	 </li>
+                        <li>DCIT 208 -	Software Engineering	3	 </li>
+                        <li>UGRC 220 - Introduction to African Studies	3	 </li>
+                    </ul>
+                    <p> Select any 9 credits from the above</p>
+                </div>
+
+    
+                <button type="button" class="collapsible">
+                    Third Year
+                </button>
+    
+                <div class="content">
+                    <p>
+                        <strong>First Semester</strong>>
+                    </p>
+                    <ul>
+                        <li>DCIT 301 - Operating Systems	3	 </li>
+                        <li>DCIT 303 - Computer Networks	3	 </li>
+                        <li>DCIT 303 - Computer Networks	3	 </li>
+                    </ul>
+                    <p>Electives:</p>
+                    <ul>
+                      <li>DCIT 309 - Embedded Systems and IoT	3	</li>
+                      <li>DCIT 313 - Introduction to Artificial Intelligence	3	</li>
+                    </ul>
+    
+                    <p>
+                        <strong>Second Semester</strong>>
+                    </p>
+    
+                    <ul>
+                        <li>DCIT 302 - Human Computer Interaction	3	 </li>
+                        <li>DCIT 302 - Human Computer Interaction	3	 </li>
+                    </ul>
+                    <p>Electives:</p>
+                    <ul>
+                        <li>DCIT 304 - Research Methods	3	 </li>
+                        <li>DCIT 318 - Programming II	3	 </li>                             
+                    </ul>
+                </div>
+    
+                <button type="button" class="collapsible">
+                    Fourth Year
+                </button>
+    
+                <div class="content">
+                    <p>
+                        <strong>First Semester</strong>
+                    </p>
+                    <ul>
+                        <li>DCIT 400 - Project	3	 </li>
+                        <li>DCIT 401 - Social, Legal, Ethical and Professional Issues	3	 </li>
+                        <li>DCIT 407 - Image Processing	3	 </li>                       
+                    </ul>
+                    <p>
+                      Electives:
+                    </p>
+                    <ul>
+                      <li>DCIT 403 - Designing Intelligent Agents	3	</li>
+                      <li>DCIT 405 - Statistical Models and Methods for Data Science	3	</li>
+                      <li>DCIT 411 - Bioinformatics	3</li>
+                      <li>DCIT 417 - Network Performance Analysis and Modeling	3</li>
+                      <li>DCIT 423 - Network Servers and Infrastructure	3	</li>
+                    </ul>
+    
+                    <p>
+                        <strong>Second Semester</strong>>
+                    </p>
+    
+                    <ul>
+                        <li>DCIT 400 - Project	3	 </li>
+                        <li>DCIT 402 - Management Principles in Computing	3	 </li>
+                        <li>DCIT 418 - Systems and Network Security	3	 </li>
+                        <li>DCIT 428 - Wireless Systems and Networks	3	 </li>
+                    </ul>
+                    <p>Electives:</p>
+                    <ul>
+                      <li>DCIT 404 - Advanced Databases	3	</li>
+                      <li>DCIT 406 - Advanced Computer Networks	3	</li>
+                      <li>DCIT 408 - Compilers	3	</li>
+                      <li>DCIT 412 - Computer Vision	3	</li>
+                      <li>DCIT 414 - Data Mining and Warehousing	3	</li>
+                      <li>DCIT 416 - Digital Signal Processing	3	</li>
+                      <li>DCIT 422 - Information Visualization	3	</li>
+                      <li>DCIT 426 - Telecommunication Systems	3	</li>
+                    </ul>
+                  </div>
+
+                  <div class="NavPane">
+                    <div>  
+                      Navigate
+                      <p> 
+                        <ul>
+                          <li>Contact Help</li>
+                          <li>Level Of Education</li>
+                          <li>Possible Careers</li>
+                          <li>Short Courses</li>
+                        </ul>   
+                      </p>
+                    </div>
+                    
+                    <div>
+                      Academics
+                      <p>
+                        <ul>
+                          <li>Libraries</li>
+                          <li>Academic Calendar</li>
+                          <li>Timetable</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+    </body>
+</html>

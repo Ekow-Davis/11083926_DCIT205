@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <title>
+      About Department Page
+    </title>
+        
+    <style>
+      div.scrollmenu {
+        background-color: #BD9C60;
+        overflow: auto;
+        white-space: nowrap; 
+      }
+
+      div.scrollmenu a {
+        display:inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+      }
+
+      div.scrollmenu a:hover {
+        background-color: #b38f4cb4;
+        cursor: pointer;
+      }
+
+      .HomePageButton{
+        background-color: #2C2A58;
+        color: #BD9C60;
+        border: none;
+        cursor: pointer;
+        margin-left: 150px;
+        margin-right: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .HomePageButton:hover{
+        opacity: 0.7;
+      }
+
+      .HomePageButton:active{
+        opacity: 0.5;
+      }
+
+      .HelpPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .HelpPageButton:hover{
+        opacity: 0.7;
+      }
+
+      .HelpPageButton:active{
+        opacity: 0.5;
+      }
+
+      .DepartmentPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .DepartmentPageButton:hover{
+        opacity: 0.7;
+      }
+
+      .DepartmentPageButton:active{
+        opacity: 0.5;
+      }
+
+      * {box-sizing: border-box}
+      body {font-family: 'Segoe UI'; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 600px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: grey;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+
+      .text {
+        color: black;
+        font-size: 22px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .numbertext {
+        color: #f2f2f296;
+        font-size: 16px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+
+      .heading{
+        font-family: 'Segoe UI';
+        color: #2C2A58;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .DepartmentDescription{
+        font-size: 19px;
+      }
+
+      .AboutHeader{
+        font-family: 'Segoe UI';
+        color: #2C2A58;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: underline;
+        text-align: center;
+      }
+
+      .NavPane{
+        background-color: #2C2A58;
+        color: azure;
+        font-family: 'Segoe UI';
+        margin-top: 45vh;
+      }
+
+      .PossibleCareersButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .ContactPageButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .LevelsOfEducationButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+      .ShortCoursesButton{
+        background-color: #2C2A58;
+        color: #BD9C6C;
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+        height: 22px;
+        border-radius: 6px;
+        transition: opacity 0.8s;
+        align-self: center;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <img src="WebsitePictures/comScience_logo.png" alt="Department logo" title="" style="width:250px">
+
+      <button class="HomePageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FirstPage.html'">
+        HOME
+      </button>
+    
+      <button class="HelpPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\FAQPage.html'">
+          HELP
+      </button>
+    
+      <button class="DepartmentPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\AboutPage.html'">
+          ABOUT
+      </button>
+
+      <button class="ContactPageButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ContactHelpPage.html'">
+        Contact
+      </button>
+
+      <button class="LevelsOfEducationButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\LevelsOfEducation.html'">
+        Levels
+      </button>
+
+      <button class="ShortCoursesButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\ShortCourses.html'">
+        Short Courses
+      </button>
+
+      <button class="PossibleCareersButton" onclick="location.href='C:\Users\\ekowd\\OneDrive\\Desktop\\output\\html\\PossibleCarrers.html'">
+        Careers
+      </button>
+    </div>
+
+    <div>
+      <hr>
+      <p class="AboutHeader">
+        ABOUT THE DEPARTMENT
+      </p>
+    </div>
+
+    <div>
+      <hr>
+      <h1 class="heading">
+        Programs Of Study
+      </h1>
+
+      <div class="scrollmenu">
+        <a href="#home">Single Major Computer Science</a>
+        <a href="#news">Single Major Computer Science</a>
+        <a href="#contact">Combined Major Computer Science with Statistics</a>
+        <a href="#about">Combined Major Computer Science with Mathematics</a>
+        <a href="#support">Computer Science Major Statistics Minor</a>
+        <a href="#blog">Computer Science Major Statistics Minor</a>
+        <a href="#blog">Statistics Major Computer Science Minor</a>
+        <a href="#blog">Mathemathics Major Computer Science Minor</a>
+      </div>
+    </div>
+
+    <div>
+      <h1 class="heading">
+        Lecturers
+      </h1>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="WebsitePictures/MarkAttahMensah.jpg" style="width:100%">
+          <div class="text">Mr. Mark Atta Mensah</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="WebsitePictures/EmptyProfile.jpg" style="width:100%">
+          <div class="text">Michel Soli Agbo Tettey</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="WebsitePictures/EmptyProfile.jpg" style="width:100%">
+          <div class="text">Prof Katsriku Apieku Ferdinand</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="WebsitePictures/EmptyProfile.jpg" style="width:100%">
+          <div class="text">Sir Abdul Aziz Abdul Baasit</div>
+        </div>
+      
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    </div>
+
+    <div>
+      <h1 class="heading">
+        The Department
+      </h1>
+
+      <p class="DepartmentDescription">
+        The Department of Computer Science at the University of Ghana stands as a dynamic hub of innovation and academic excellence in the realm of technology. Committed to fostering a cutting-edge learning environment, our department is at the forefront of shaping future leaders in the field of computer science. 
+        <br>
+        <br>
+        Our distinguished faculty, comprised of seasoned academics and industry experts, brings a wealth of experience to the classroom. Students engage in a comprehensive curriculum that covers a spectrum of topics, from foundational principles to the latest advancements in artificial intelligence, data science, and software engineering.
+        <br>
+        <br>
+        State-of-the-art laboratories provide students with hands-on experiences, allowing them to apply theoretical knowledge to real-world scenarios. The department is a thriving ecosystem where creativity flourishes, and students are encouraged to embark on innovative projects, hackathons, and collaborative research initiatives.
+        <br>
+        <br>
+        At the University of Ghana's Department of Computer Science, we pride ourselves on nurturing a community of thinkers, problem solvers, and tech enthusiasts. Beyond the classroom, students have access to a network of alumni who have made impactful contributions in various industries globally.
+        <br>
+        <br>
+        Whether you aspire to be a software developer, data scientist, or technology entrepreneur, our department is dedicated to equipping you with the skills and mindset needed to excel in a rapidly evolving digital landscape. Join us on a journey where possibilities are limitless, and the future of computer science is crafted with passion and purpose.
+      </p>
+    </div>
+
+    <div class="NavPane">
+      <div>  
+        Navigate
+        <p> 
+          <ul>
+            <li>Contact Help</li>
+            <li>Level Of Education</li>
+            <li>Possible Careers</li>
+            <li>Short Courses</li>
+          </ul>   
+        </p>
+      </div>
+      
+      <div>
+        Academics
+        <p>
+          <ul>
+            <li>Libraries</li>
+            <li>Academic Calendar</li>
+            <li>Timetable</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    </body>
+</html>
